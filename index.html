@@ -1,0 +1,34 @@
+<title>Check Birthday</title>
+
+
+    <label for="birthdayInput">Nhập ngày tháng năm sinh đi , tôi có điều muốn nói với bạn , ví dụ "01012002":</label>
+    <input type="text" id="birthdayInput">
+    <button onclick="checkBirthday()">Kiểm tra</button>
+    <p id="result"></p>
+<style>
+        /* CSS cho viền của ô input */
+        input {
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        button{
+            cursor:pointer;
+            padding: 5px;
+            background : #ccc;
+        }
+    </style>
+    <script>
+        function checkBirthday() {
+            var input = document.getElementById("birthdayInput");
+            var result = document.getElementById("result");
+            var inputValue = input.value;
+
+            // Kiểm tra nếu giá trị nhập vào là "01082002" thì hiển thị thông báo
+            if (inputValue === "01082002") {
+                result.textContent = "Minh Anh à , là c phải không ? T vẫn theo dõi facebook ,ins của c , hy vọng c đang không thích người khác , nếu mã morse c viết là cho t , hãy để mã morse là chữ T , t sẽ chủ động nhắn c";
+            } else {
+                result.textContent = "Chả có gì muốn nói với bạn cả";
+            }
+        }
+    </script>
