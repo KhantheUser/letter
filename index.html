@@ -1,7 +1,7 @@
 <title>Check Birthday</title>
 
 
-    <label for="birthdayInput">Nhập ngày tháng năm sinh đi , yên tâm t không lưu data đâu, ví dụ "01012002":</label>
+    <label for="birthdayInput">Nhập ngày tháng năm sinh đi t có điều muốn nói , yên tâm t không lưu data đâu, ví dụ "01012002":</label>
     <input type="text" id="birthdayInput">
     <button onclick="checkBirthday()">Kiểm tra</button>
     <p id="result"></p>
@@ -25,8 +25,9 @@
             var inputValue = input.value;
 
             // Kiểm tra nếu giá trị nhập vào là "01082002" thì hiển thị thông báo
-            if (inputValue === "01082002") {
-                result.textContent = "Minh Anh à , c may mắn nhé , chắc cũng đến lúc t thoát khỏi những suy nghĩ về c rồi";
+            if (inputValue === "06122004") {
+                result.textContent = "Muốn nhắn trực tiếp với e nhưng nói nhiều quá sợ e đánh giá , nếu e có chút quan tâm tới a thì may ra e đọc được . \n Sau lần chào tân hôm đấy , là lần đầu tiên a nhìn thấy một công chúa , những suy nghĩ giữ e là của riêng mình cứ len lỏi trong a . \n Những hôm sau , e rep tin nhắn của a ít dần làm cho a có những suy nghĩ tiêu cực , a chỉ muốn nhanh chóng xác định tình cảm của e nhưng a đã hơi nóng vội rồi . <ình chưa là gì của nhau cả mà thái độ a như thế \n Em như bông hoa được vây quanh bởi những chàng trai , còn anh chỉ là kẻ qua đường đứng lại ngắm mà không thể bước tiếp .                  
+                     ";
             } else {
                 result.textContent = "Chả có gì muốn nói với bạn cả";
             }
